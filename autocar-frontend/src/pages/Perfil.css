@@ -1,0 +1,57 @@
+.perfil-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 40px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--gray-dark);
+}
+
+.perfil-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--dark-2);
+  border: 2px solid var(--gray-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--gray-light);
+  flex-shrink: 0;
+}
+
+.perfil-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.perfil-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.perfil-section-title {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--gray-light);
+}
+
+.form-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+@media (max-width: 560px) {
+  .perfil-header { flex-direction: column; text-align: center; }
+  .form-grid-2 { grid-template-columns: 1fr; }
+  .form-grid-2 [style*='gridColumn'] { grid-column: auto; }
+}
